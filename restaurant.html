@@ -15,14 +15,14 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
-      <h2><a href="/" aria-label="Link Restaurant Reviews">Restaurant Reviews</a></h2>
+    <nav role="navigation">
+        <h2><a href="/" aria-label="Link Restaurant Reviews">Restaurant Reviews</a></h2>
+      <!-- Beginning breadcrumb -->
+        <ul id="breadcrumb" aria-label="breadcrumb">
+          <li><a href="/" aria-label="Link Home">Home</a></li>
+        </ul>
+        <!-- End breadcrumb -->
     </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" role="navigation" aria-label="breadcrumb">
-      <li><a href="/" aria-label="Link Home">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
   <!-- End header -->
@@ -41,7 +41,7 @@
         <img id="restaurant-img">
         <p id="restaurant-cuisine" tabindex="0"></p>
         <p id="restaurant-address" tabindex="0"></p>
-        <table id="restaurant-hours" tabindex="0"></table>
+        <table id="restaurant-hours" tabindex="0" aria-label="service hours"></table>
       </section>
     </section>
     <!-- end restaurant -->
